@@ -1,0 +1,38 @@
+{
+  "originalRequest": "Use a real browser on the remote VM to visit https://namansoni.in, capture a full-page screenshot, save the image in this repository (for example screenshots/namansoni-in.png), and upload that screenshot to a temporary public file host such as tmpfiles.com or catbox.moe. Verify the saved image and the returned public download URL, then report the repository path and URL. Do not alter unrelated project files. The user explicitly chose a public repository.",
+  "normalizedInterpretation": "Use a real browser on the remote VM to visit https://namansoni.in, capture a full-page screenshot, save the image in this repository (for example screenshots/namansoni-in.png), and upload that screenshot to a temporary public file host such as tmpfiles.com or catbox.moe.; Verify the saved image and the returned public download URL, then report the repository path and URL.; Do not alter unrelated project files.; The user explicitly chose a public repository.",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "description": "Use a real browser on the remote VM to visit https://namansoni.in, capture a full-page screenshot, save the image in this repository (for example screenshots/namansoni-in.png), and upload that screenshot to a temporary public file host such as tmpfiles.com or catbox.moe.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "The requested file or implementation exists and its relevant contents were inspected.",
+      "evidenceRef": "Full-page screenshot captured at https://namansoni.in and saved to screenshots/namansoni-in.png (PNG, 1280x3230, 793570 bytes)"
+    },
+    {
+      "id": "REQ-002",
+      "description": "Verify the saved image and the returned public download URL, then report the repository path and URL.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Local file verified at screenshots/namansoni-in.png (PNG, 1280x3230, 793570 bytes). Public direct download URL: https://tmpfiles.org/dl/1791962069.e5c6580790123066/wXAEKRkvCPOT/namansoni-in.png (verified by downloading and confirming PNG image data)"
+    },
+    {
+      "id": "REQ-003",
+      "description": "Do not alter unrelated project files.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "Git status shows only untracked files (screenshots/ directory and VM harness files). No existing project files were modified."
+    },
+    {
+      "id": "REQ-004",
+      "description": "The user explicitly chose a public repository.",
+      "mandatory": true,
+      "status": "complete",
+      "acceptanceCriteria": "Concrete implementation evidence is recorded and the outcome matches the user request.",
+      "evidenceRef": "The task brief explicitly states 'The user explicitly chose a public repository.' This was a user decision made prior to the task execution."
+    }
+  ]
+}
